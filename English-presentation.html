@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="beginning">Hey, hello there. Good to see you and welcome to my timeline. Would you like to write down your name?</h1> <br>
+
+    <div class="btn">
+
+        <button id="userName" class="boton">My name is...</button>
+        <button id="mistery" class="boton">No thanks, I´d like to keep it secret</button>
+
+    </div> <!-- Pertenece a .btn -->
+
+    <div class="aling">
+
+    <input type="text" id="textName" class="textName" placeholder="My name is...">
+
+    </div> <!-- Pertenece a .align -->
+
+    <div class="alignButton">
+
+    <button id="sendName" class="sendName boton">Continue</button>
+
+    </div> <!-- Pertenece a .alignButton -->
+
+    <div id="name" class="name"></div> <br>
+
+    <div class="alignYesButton">
+
+        <button id="yes" class="boton">Yes</button>
+        <span id="imagen"></span>       
+
+    </div> <!-- Pertenece a .alignYesButton  -->
+
+    <nav id="nav">
+        <button onclick="textoInfo.textContent = naci;">Where I was born</button>
+        <button onclick="textoInfo.textContent = primary;">Primary school and sports</button>
+        <button onclick="textoInfo.textContent = highSchool;">High school and others likes</button>
+        <button onclick="textoInfo.textContent = pandemic;">Time during pandemic</button>
+        <button onclick="textoInfo.textContent = english;">Certification of english</button>
+        <button onclick="textoInfo.textContent = nowadays;">Nowadays</button>
+        <button id="final" onclick="textoInfo.textContent = future;">Future plans</button>
+    </nav>
+
+    <span id="textoInfo"></span> <br>
+
+    <div class="alignSurprise">
+
+    <button id="sorpresa" onclick="confetti();">??????????</button>
+
+    </div> <!-- Pertenece a alignSurprise -->
+
+    <footer id="footer">
+
+        <h2 class="ty">Thanks for watching!!!!!!!   Or maybe you just skipped the other buttons</h2>
+
+        <h3>Made by Luciano Mooney</h3>
+
+        <h3>Made with:</h3>
+
+        <div class="iconos">
+
+            <div class="icon-javascript"></div>
+            <div class="icon-embed2"></div>
+            <div class="icon-html-five"></div>
+            <div class="icon-css3"></div>
+
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
